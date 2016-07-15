@@ -106,9 +106,9 @@ class Prcm_Service_Firebase
 
 		$push_notification_data = array(
 									'registration_ids'  => $registrationIds,
-				                    'notification'      => $msg,
-								    'priority'          => 'high',
-				                    'content_available' => true,
+									'notification'      => $msg,
+									'priority'          => 'high',
+									'content_available' => true,
 								  );
 
 		if (!empty($data)) $push_notification_data["data"] = $data;
