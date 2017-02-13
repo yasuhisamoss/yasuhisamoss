@@ -9,10 +9,15 @@ brew install tree
 brew install git 
 brew install svn
 brew install php70
+brew install coreutils
 
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
+# editor
 brew cask install coteditor
+# launcher
 brew cask install alfred
+
 brew cask install skype
 brew cask install google-japanese-ime
 brew cask install google-chrome
@@ -20,6 +25,8 @@ brew cask install phpstorm
 brew cask install postman
 brew cask install sequel-pro
 brew cask install sourcetree
+#CSV EDITOR
+brew cask install table-tool
 
 #font
 brew install Caskroom/cask/xquartz
